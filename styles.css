@@ -49,11 +49,10 @@ button {
   padding: 0.8rem 1.2rem; /* Adjust padding for button size */
   font-size: 2.5vw; /* Adjust font size relative to viewport width */
   color: white; /* Text color for all buttons */
-  background-color: #1a1919; /* Default background color */
   border: none;
   border-radius: 5px; /* Slightly rounded corners */
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
   width: 60vw; /* Button width relative to viewport width */
   max-width: 400px; /* Maximum width to prevent excessive scaling */
 }
@@ -81,7 +80,6 @@ button {
 
 /* Change hover effect to match button background color */
 button:hover {
-  background-color: inherit; /* Inherit the background color from the button */
   transform: scale(1.05); /* Slightly increase size on hover */
 }
 
