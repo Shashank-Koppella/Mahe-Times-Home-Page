@@ -60,7 +60,7 @@ button {
 
 /* Specific background colors for each button */
 .connections-button {
-  background-color: #1f1f1e
+  background-color: #1a1919;
 }
 
 .wordle-button {
@@ -79,7 +79,9 @@ button {
   background-color: #525151;
 }
 
+/* Change hover effect to match button background color */
 button:hover {
+  background-color: inherit; /* Inherit the background color from the button */
   transform: scale(1.05); /* Slightly increase size on hover */
 }
 
@@ -92,5 +94,27 @@ button:hover {
   100% {
     opacity: 1;
     transform: translateY(0); /* End at its original position */
+  }
+}
+
+/* Portrait mode adjustments */
+@media (orientation: portrait) {
+  .logo {
+    width: 25vw; /* Increase the logo size in portrait mode */
+  }
+
+  h1 {
+    font-size: 15vw; /* Increase the font size of the title in portrait mode */
+  }
+
+  .button-grid {
+    margin-top: 2vh; /* Increase space from the title to the button grid in portrait mode */
+  }
+
+  button {
+    padding: 1rem 1.5rem; /* Increase padding for buttons in portrait mode */
+    font-size: 5vw; /* Increase font size of buttons in portrait mode */
+    width: 70vw; /* Increase button width in portrait mode */
+    max-width: 500px; /* Increase maximum width of buttons in portrait mode */
   }
 }
